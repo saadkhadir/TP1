@@ -54,10 +54,11 @@ public class OperationsChaines {
             }
             if(choix!=5){
                 System.out.println("Frappez une touche pour revenir au menu");
+                scanner.nextLine();
             }
 
 
         }while(choix!=5);
-
+     scanner.close();
     }
 }
