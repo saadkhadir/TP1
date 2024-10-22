@@ -47,12 +47,12 @@ public class Notes {
 
         int cpt=0;
         for(float note : notes){
-            if(note==note){
+            if(note==noteEntree){
                 cpt++;
             }
         }
 
-    System.out.println("le nombre des étudiants ayant la note saisie par l'utilisateur est" +cpt );
+    System.out.println("le nombre des étudiants ayant la note saisie par l'utilisateur est :" + cpt );
 
 
 
