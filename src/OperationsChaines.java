@@ -11,7 +11,6 @@ public class OperationsChaines {
             System.out.println("2. Afficher la chaîne");
             System.out.println("3. Inverser la chaîne");
             System.out.println("4. Nombre de mots");
-            System.out.println("5. Quitter");
             System.out.print("Choisissez une option : ");
             choix = scanner.nextInt();
             scanner.nextLine();
@@ -35,7 +34,7 @@ public class OperationsChaines {
                     }
                     else{
                         String chaineInversee = new StringBuilder(chaine).reverse().toString();
-                        System.out.println("la chaine de caractère inversée" +chaineInversee);
+                        System.out.println("la chaine de caractère inversée  :" +chaineInversee);
                     }
                     break;
                 case 4:
@@ -47,18 +46,16 @@ public class OperationsChaines {
                         System.out.println("le nombre de mots de la chaine est" + tabch.length);
                     }
                    break;
-                case 5 :
-                    System.out.println("Vous avez quittez");
                 default:
                     System.out.println("option invalide");
             }
-            if(choix!=5){
+            if(choix<5){
                 System.out.println("Frappez une touche pour revenir au menu");
                 scanner.nextLine();
             }
 
 
-        }while(choix!=5);
+        }while(choix<5);
      scanner.close();
     }
 }
