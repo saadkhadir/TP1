@@ -14,7 +14,6 @@ public class OperationsChaines {
             System.out.print("Choisissez une option : ");
             choix = scanner.nextInt();
             scanner.nextLine();
-
             switch (choix) {
                 case 1:
                     System.out.print("Entrez une chaîne de caractères : ");
@@ -25,7 +24,7 @@ public class OperationsChaines {
                         System.out.println("rien à afficher");
                     }
                         else{
-                            System.out.println("voici la chaine" + chaine);
+                            System.out.println("voici la chaine :" + chaine);
                         }
                         break;
                 case 3:
@@ -42,7 +41,7 @@ public class OperationsChaines {
                         System.out.println("chaine vide");
                     }
                     else {
-                        String[] tabch = chaine.trim().split("");
+                        String[] tabch = chaine.trim().split(" ");
                         System.out.println("le nombre de mots de la chaine est" + tabch.length);
                     }
                    break;
@@ -53,8 +52,6 @@ public class OperationsChaines {
                 System.out.println("Frappez une touche pour revenir au menu");
                 scanner.nextLine();
             }
-
-
         }while(choix<5);
      scanner.close();
     }

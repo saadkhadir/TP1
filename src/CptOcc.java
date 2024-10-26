@@ -18,7 +18,7 @@ public class CptOcc {
           nb_occurrences[ch - 'a'] = occ;
 
         }
-        System.out.println("la chaine" + chaine + "contient:");
+        System.out.println("la chaine " + chaine + "contient:");
         for(int i=0;i<nb_occurrences.length;i++){
             if(nb_occurrences[i] > 0){
                 char lettre = (char) (i + 'a');
